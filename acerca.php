@@ -19,35 +19,35 @@
         </header>
         <main class="contenido">
             <p>
-                Somos una pequeña empresa que busca continuar desarrollando los conocimientos y habilidades para impulsar las carreras profesionales relacionadas a algún lenguaje de la programación como c, c++, java y PHP.
+                Somos una pequeña empresa mexicana que busca comerciar productos de categoría de anime o videjuego, con precios accesibles para todo público.
                 <br>
                 <br>
-                Dando una idea mas clara de que son algunos lenguajes:
+                Para que nos conozcas un  poco más:
             </p>
         </main>
         <main class="vision">
             <p>
-                <b>Java</b> es un lenguaje de programación y una plataforma informática que fue comercializada por primera vez en 1995 por Sun Microsystems.
-                El lenguaje de programación Java fue desarrollado originalmente por James Gosling, de Sun Microsystems (constituida en 1983 y posteriormente adquirida el 27 de enero de 2010 por la compañía Oracle), y publicado en 1995 como un componente fundamental de la plataforma Java de Sun Microsystems. Su sintaxis deriva en gran medida de C y C++, pero tiene menos utilidades de bajo nivel que cualquiera de ellos. Las aplicaciones de Java son compiladas a bytecode (clase Java), que puede ejecutarse en cualquier máquina virtual Java (JVM) sin importar la arquitectura de la computadora subyacente.
+                <b>Visión: </b> Ser la compañía más centrada en el cliente del mundo, donde nuestros clientes pueden encontrar y descubrir cualquier cosa de estas categorías para que posteriormente lo puedan comprar en línea.
+                Tratamos de mantener un enfoque centrado en el potencial comprador. Dicho cliente puede localizarse en cualquier parte del país de México, garantizando que podrá encontrar lo que quiera al momento de realizar una compra en línea.
             </p>
             <br>
             <img src="" alt="">
         </main>
         <main class="mision">
             <p>
-                <b>C++</b> es un lenguaje de programación diseñado en 1979 por Bjarne Stroustrup. La intención de su creación fue extender al lenguaje de programación C y añadir mecanismos que permiten la manipulación de objetos. En ese sentido, desde el punto de vista de los lenguajes orientados a objetos, C++ es un lenguaje híbrido.
+                <b>Misión:</b> Nos esforzamos por brindar a nuestros clientes los precios más bajos posibles, la mejor selección disponible y la mayor comodidad.
 
-                Posteriormente se añadieron facilidades de programación genérica, que se sumaron a los paradigmas de programación estructurada y programación orientada a objetos. Por esto se suele decir que el C++ es un lenguaje de programación multiparadigma.
+                Así, como compañía proponemos dar a nuestros clientes los mejores beneficios en cuanto al precio y la variedad de productos. Pero además ofreciendo estas ventajas de forma cómoda para el usuario.
             </p>
             <img src="" alt="">
         </main>
         <main class="objetivo">
             <p>
-                El lenguaje de programación <b>C</b> se considera como uno de los lenguajes más importantes en la actualidad. Su flexibilidad aporta una gran libertad al programador informático; sin embargo, dispone de una baja comprobación de incorrecciones, por lo que la responsabilidad del profesional es total.
+                <b>Objetivo: </b> Convertirnos en la compañía mundial que más se centra en el cliente. Intentamos buscar siempre dar respuesta a todas las inquietudes y dudas del cliente para poder facilitarle que pueda comprar cualquier cosa que necesite a través de nuestra plataforma online.
 
-                Además del desarrollo de sistemas operativos, C es clave en la creación de apps y sustenta otros lenguajes más actuales como Java, C++ o C#.
+                Nuestro objetivo se centra en la creación de demanda de productos de estilo anime o videjuegos que no se consiguen fácilmente.
 
-                Por otro lado, C está compuesto por una base en la que se almacenan las diferentes funciones en forma de bloques de código y así operar en los parámetros marcados.
+                Por lo tanto, con nuestra política de selección, precios económicos y envíos fiables y rápidos, nuestra visión, misión y objetivo nos centramos en el consumidor, buscando cumplir sus necesidades a través de la satisfacción.
             </p>
             <img src="imagenes/cmasmas.png" alt="">
         </main>
