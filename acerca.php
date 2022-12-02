@@ -31,7 +31,7 @@
                 Tratamos de mantener un enfoque centrado en el potencial comprador. Dicho cliente puede localizarse en cualquier parte del país de México, garantizando que podrá encontrar lo que quiera al momento de realizar una compra en línea.
             </p>
             <br>
-            <img src="" alt="">
+           <center> <img src="images/vector_empresarial.jpg" width=200px> </center>
         </main>
         <main class="mision">
             <p>
@@ -39,7 +39,7 @@
 
                 Así, como compañía proponemos dar a nuestros clientes los mejores beneficios en cuanto al precio y la variedad de productos. Pero además ofreciendo estas ventajas de forma cómoda para el usuario.
             </p>
-            <img src="" alt="">
+            <center><img src="images/mision.jpg" width=200px></center>
         </main>
         <main class="objetivo">
             <p>
@@ -49,7 +49,7 @@
 
                 Por lo tanto, con nuestra política de selección, precios económicos y envíos fiables y rápidos, nuestra visión, misión y objetivo nos centramos en el consumidor, buscando cumplir sus necesidades a través de la satisfacción.
             </p>
-            <img src="imagenes/cmasmas.png" alt="">
+            <center><img src="images/objetivo.png" width=200px></center>
         </main>
         <aside class="sidebar">
             <h3>Ultima actualizacion del servidor:</h3>

@@ -77,7 +77,7 @@
                     </div>
                     <div class="navbar-item">
                     <div class="buttons">
-                            <a target="_blank" rel="noreferrer" href="" class="button is-primary">
+                            <a target="_blank" rel="noreferrer" href="./html/ayuda.html" class="button is-primary">
                                 <strong>Soporte y ayuda</strong>
                             </a>
                         </div>
