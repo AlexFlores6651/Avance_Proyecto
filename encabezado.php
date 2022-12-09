@@ -46,7 +46,7 @@
                         <a class="nav-link" href="acerca.php" style="color:white;">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.php" style="color:white;">Contáctanos</a>
+                        <a class="nav-link" href="html/contacto.html" style="color:white;">Contáctanos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
