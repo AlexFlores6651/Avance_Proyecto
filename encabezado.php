@@ -25,7 +25,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="inicio.php">
+            <a class="navbar-brand" href="../ProyectoF_PagPrinc_Graficas/index.html">
                 <h4 class="title_menu">
                     <i class="fa-sharp fa-solid fa-gamepad fa-1x"></i>
                     The RockGames
