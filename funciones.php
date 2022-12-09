@@ -28,6 +28,25 @@ function obtenerProductos()
     $sentencia = $bd->query("SELECT * FROM productos");
     return $sentencia->fetchAll();
 }
+
+
+function restar_existencia($id_producto, $exist)
+{
+    $num = $exist-1;
+    $bd = obtenerConexion();
+    iniciarSesionSiNoEstaIniciada();
+    $sentencia = $bd->query("UPDATE productos SET existencia = '$num' WHERE id = '$id_producto'");
+    //return $sentencia->execute($exist, $id_producto);
+}
+
+function limpiar_carrito(){
+    $idSesion = session_id();
+    $bd = obtenerConexion();
+    iniciarSesionSiNoEstaIniciada();
+    $sentencia = $bd->query("DELETE FROM carrito_usuarios WHERE id_sesion = '$idSesion'");
+    //return $sentencia->execute($idSesion);
+}
+
 function productoYaEstaEnCarrito($idProducto)
 {
     $ids = obtenerIdsDeProductosEnCarrito();
