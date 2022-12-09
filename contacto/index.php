@@ -1,3 +1,21 @@
+<?php
+    session_start();
+    ob_start();
+
+    $nombreA = 'Admin';
+    $nombreT = 'Administrador';
+
+    if(!isset($_SESSION['Nombre'])){
+        include "../encabezado4.php";
+    }else{
+        if($_SESSION['Nombre'] == $nombreA && $_SESSION['Tipo'] == $nombreT){
+            include "../encabezado6.php";
+        }else{
+            include "../encabezado5.php";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +40,7 @@
                 <h2>INFORMACION<br>DE CONTACTO</h2>
             </section>
             <section class="info_items">
-                <p><span class="fa fa-envelope"></span> info.contact@gmail.com</p>
+                <p><span class="fa fa-envelope"></span> therocagames1234@gmail.com</p>
                 <p><span class="fa fa-mobile"></span> +1(585) 902-8665</p>
             </section>
         </section>

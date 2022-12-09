@@ -1,3 +1,21 @@
+<?php
+    session_start();
+    ob_start();
+
+    $nombreA = 'Admin';
+    $nombreT = 'Administrador';
+
+    if(!isset($_SESSION['Nombre'])){
+        include "../encabezado4.php";
+    }else{
+        if($_SESSION['Nombre'] == $nombreA && $_SESSION['Tipo'] == $nombreT){
+            include "../encabezado6.php";
+        }else{
+            include "../encabezado5.php";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

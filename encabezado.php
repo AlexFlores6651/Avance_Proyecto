@@ -1,3 +1,11 @@
+<?php
+    ob_start();
+    if(isset($_SESSION['Nombre'])){ 
+        $name = $_SESSION['Nombre'];
+    }
+    include_once "funciones.php";
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +33,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../ProyectoF_PagPrinc_Graficas/index.html">
+            <a class="navbar-brand" href="./index.php">
                 <h4 class="title_menu">
                     <i class="fa-sharp fa-solid fa-gamepad fa-1x"></i>
                     The RockGames
@@ -37,36 +45,32 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"> 
-                        <a class="nav-link active" aria-current="page" href="tienda.php" style="color:white;">Tienda</a>
+                        <a class="nav-link active" aria-current="page" href="./tienda.php" style="color:white;">Tienda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.php" style="color:white;">Productos</a>
+                        <a class="nav-link disabled" href="./productos.php" style="color:white;">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="acerca.php" style="color:white;">Acerca de</a>
+                        <a class="nav-link" href="./acerca.php" style="color:white;">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../contacyo/Formulario%20de%20Contacto/" style="color:white;">Contáctanos</a>
+                        <a class="nav-link" href="./contacto/index.php" style="color:white;">Contáctanos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
                         Categorias
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="tienda_anime.php" style="color:black;">Anime</a></li>
-                            <li><a class="dropdown-item" href="tienda_video.php" style="color:black;">Videojuegos</a></li>
+                            <li><a class="dropdown-item" href="./tienda_anime.php" style="color:black;">Anime</a></li>
+                            <li><a class="dropdown-item" href="./tienda_video.php" style="color:black;">Videojuegos</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
                     </li>
                 </ul>
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a href="ver_carrito.php" class="button is-success">
+                            <a href="./ver_carrito.php" class="button is-success">
                                 <strong>Carrito<?php
-                                                    include_once "funciones.php";
                                                     $conteo = count(obtenerIdsDeProductosEnCarrito());
                                                     if ($conteo > 0) {
                                                         printf("(%d)", $conteo);
@@ -76,10 +80,15 @@
                         </div>
                     </div>
                     <div class="navbar-item">
-                    <div class="buttons">
-                            <a target="_blank" rel="noreferrer" href="./html/ayuda.html" class="button is-primary">
-                                <strong>Soporte y ayuda</strong>
-                            </a>
+                        <div class="buttons">
+                            <a href="./html/ayuda.php"><button type="button" class="btn btn-primary"><strong>Soporte y Ayuda</strong></button></a>
+                        </div>
+                    </div>
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a href="./login/index.php"><button type="button" class="btn btn-outline-secondary">Iniciar Sesión</button></a>
+                            <a href=" "><p style="color: #212529;"><?php echo"__";?></p></a>
+                            <?php if(isset($name)){echo '<p class="title_menu">'.$name.'</p>';}?>
                         </div>
                     </div>
                 </div>

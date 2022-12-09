@@ -1,3 +1,25 @@
+<?php
+    session_start();
+    ob_start();
+
+    $nombreA = 'Admin';
+    $nombreT = 'Administrador';
+
+    if(!isset($_SESSION['Nombre'])){
+        include "encabezado.php";
+    }else{
+        if($_SESSION['Nombre'] == $nombreA && $_SESSION['Tipo'] == $nombreT){
+            include "encabezado3.php";
+        }else{
+            include "encabezado2.php";
+        }
+    }
+
+    include_once "funciones.php";
+    $productos = obtenerProductos();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,9 +32,6 @@
 </head>
 
 <body>
-    <?php
-    include "encabezado.php";
-    ?>
     <div class="contenedor">
         <header class="header">
             <h2>Acerca de Nosotros</h2>

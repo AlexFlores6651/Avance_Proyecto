@@ -1,4 +1,21 @@
-<?php include_once "encabezado.php" ?>
+<?php
+    session_start();
+    ob_start();
+
+    $nombreA = 'Admin';
+
+    if(!isset($_SESSION['Nombre'])){
+        include "encabezado.php";
+    }else{
+        if($_SESSION['Nombre'] == $nombreA){
+            include "encabezado3.php";
+        }else{
+            include "encabezado2.php";
+        }
+    }
+
+    include_once "funciones.php";
+?>
 
 <html lang="es">
 <head>

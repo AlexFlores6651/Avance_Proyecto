@@ -1,4 +1,26 @@
-<?php include_once "encabezado.php";
+<?php
+
+    session_start();
+    ob_start();
+
+    $nombreA = 'Admin';
+    $nombreT = 'Administrador';
+
+    if(!isset($_SESSION['Nombre'])){
+        include "encabezado.php";
+    }else{
+        if($_SESSION['Nombre'] == $nombreA && $_SESSION['Tipo'] == $nombreT){
+            include "encabezado3.php";
+        }else{
+            include "encabezado2.php";
+        }
+    }
+
+    include_once "funciones.php";
+
+?>
+
+<?php
 
     $conexion = new mysqli("localhost", "root", "", "tienda");
 
