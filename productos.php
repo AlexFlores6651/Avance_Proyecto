@@ -27,6 +27,7 @@
                     <th>Precio</th>
                     <th>Existencia</th>
                     <th>Precio Oferta</th>
+                    <th>Categoria</th>
                     <th>Imagen</th>
                     <th>Editar</th>
                     <th>Eliminar</th>
@@ -46,6 +47,14 @@
                                 echo "$".number_format($producto->precio_oferta, 2);
                             }
                         ?></td>
+                        <td>
+                            <?php if($producto->categoria == 0){
+                                echo 'Anime';
+                            }else{
+                                echo 'Videojuegos';
+                            } 
+                            ?>
+                        </td>
                         <td>
                             <img src="data:image/jpg;base64,<?php echo base64_encode($producto->imagen); ?>" alt="Imagen Producto" width="100px" />
                         </td>

@@ -29,6 +29,48 @@ function obtenerProductos()
     return $sentencia->fetchAll();
 }
 
+function obtenerProductosAnime()
+{
+    $bd = obtenerConexion();
+    $sentencia = $bd->query("SELECT * FROM productos WHERE categoria=0");
+    return $sentencia->fetchAll();
+}
+
+function obtenerProductosJuegos()
+{
+    $bd = obtenerConexion();
+    $sentencia = $bd->query("SELECT * FROM productos WHERE categoria=1");
+    return $sentencia->fetchAll();
+}
+
+function obtenerProductosF1()
+{
+    $bd = obtenerConexion();
+    $sentencia = $bd->query("SELECT * FROM productos WHERE precio >= 1 AND precio <= 100");
+    return $sentencia->fetchAll();
+}
+
+function obtenerProductosF2()
+{
+    $bd = obtenerConexion();
+    $sentencia = $bd->query("SELECT * FROM productos WHERE precio >= 100 AND precio <= 500");
+    return $sentencia->fetchAll();
+}
+
+function obtenerProductosF3()
+{
+    $bd = obtenerConexion();
+    $sentencia = $bd->query("SELECT * FROM productos WHERE precio >= 500 AND precio <= 1000");
+    return $sentencia->fetchAll();
+}
+
+function obtenerProductosF4()
+{
+    $bd = obtenerConexion();
+    $sentencia = $bd->query("SELECT * FROM productos WHERE precio >= 1000");
+    return $sentencia->fetchAll();
+}
+
 
 function restar_existencia($id_producto, $exist)
 {
@@ -91,14 +133,14 @@ function eliminarProducto($id)
     return $sentencia->execute([$id]);
 }
 
-function guardarProducto($nombre, $precio, $descripcion, $existencia, $oferta, $preciooferta, $imagen)
+function guardarProducto($nombre, $precio, $descripcion, $existencia, $oferta, $preciooferta, $imagen, $categoria)
 {
     $bd = obtenerConexion();
-    $sentencia = $bd->prepare("INSERT INTO productos(nombre, precio, descripcion, oferta, precio_oferta, imagen, existencia) VALUES(?, ?, ?, ?, ?, ?, ?)");
-    return $sentencia->execute([$nombre, $precio, $descripcion, $oferta, $preciooferta, $imagen, $existencia]);
+    $sentencia = $bd->prepare("INSERT INTO productos(nombre, precio, descripcion, oferta, precio_oferta, imagen, existencia, categoria) VALUES(?, ?, ?, ?, ?, ?, ?, ?)");
+    return $sentencia->execute([$nombre, $precio, $descripcion, $oferta, $preciooferta, $imagen, $existencia, $categoria]);
 }
 
-function actualizarProducto($id, $nombre, $precio, $descripcion, $existencia, $oferta, $preciooferta, $imagen){
+function actualizarProducto($id, $nombre, $precio, $descripcion, $existencia, $oferta, $preciooferta){
     //$bd = obtenerConexion();
     $bd = new mysqli("localhost", "root", "", "tienda");
     $sentencia = $bd->query("UPDATE productos SET nombre='$nombre' WHERE id='$id'");
@@ -107,6 +149,7 @@ function actualizarProducto($id, $nombre, $precio, $descripcion, $existencia, $o
     $sentencia = $bd->query("UPDATE productos SET existencia='$existencia' WHERE id='$id'");
     $sentencia = $bd->query("UPDATE productos SET oferta='$oferta' WHERE id='$id'");
     $sentencia = $bd->query("UPDATE productos SET precio_oferta='$preciooferta' WHERE id='$id'");
+    $sentencia = $bd->query("UPDATE productos SET imagen='1' WHERE id='$id'");
     //$sentencia = $bd->query("UPDATE productos SET imagen='$imagen' WHERE id='$id'");
 
     //$sentencia = $bd->prepare("UPDATE productos(nombre, precio, descripcion, oferta, precio_oferta, imagen, existencia) VALUES(?, ?, ?, ?, ?, ?, ?) WHERE id='$Id'");

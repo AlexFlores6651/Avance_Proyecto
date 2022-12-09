@@ -1,8 +1,5 @@
 <?php
-    include_once "encabezado.php"
-?>
-
-<?php
+    include_once "encabezado.php";
     include_once "funciones.php";
     $productos = obtenerProductosEnCarrito();
 ?>
@@ -38,22 +35,36 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Descripción</th>
-                        <th>Precio</th>
-                        <th>Quitar</th>
+                        <th> Nombre </th>
+                        <th> Descripción </th>
+                        <th> Precio </th>
+                        <th> Precio Final </th>
+                        <th> Imagen </th>
+                        <th> Quitar </th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
                         $total = 0;
                         foreach ($productos as $producto) {
-                            $total += $producto->precio;
+                            if($producto->oferta == 1){
+                                $total += $producto->precio_oferta;
+                            }else{
+                                $total += $producto->precio;
+                            }
                         ?>
-                    <tr>
+                    <tr> 
                         <td><?php echo $producto->nombre ?></td>
                         <td><?php echo $producto->descripcion ?></td>
-                        <td>$<?php echo number_format($producto->precio, 2) ?></td>
+                        <?php
+                            if($producto->oferta == 1){ ?>
+                                <td><del> $<?php echo number_format($producto->precio, 2) ?> </del> </td>
+                                <td>$<?php echo number_format($producto->precio_oferta, 2) ?></td>
+                            <?php }else{ ?>
+                                <td>     </td>
+                                <td>$<?php echo number_format($producto->precio, 2) ?></td>
+                            <?php } ?>
+                        <td><img src="data:image/jpg;base64,<?php echo base64_encode($producto->imagen); ?>" alt="Imagen Producto" width="100px" align="center" /></td>
                         <td>
                             <form action="eliminar_del_carrito.php" method="post">
                                 <input type="hidden" name="id_producto" value="<?php echo $producto->id ?>">
