@@ -33,25 +33,6 @@
     <link rel="stylesheet" href="estilosPagP.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
-<header>
- <div class="menu">
-        <div class="logo"><img class="log1" src="Imagenes/logo2.png"></img></div>
-        <div>
-            <ul class="nav">
-                <li class="menu1"><a class="link" href="index.html">Inicio</a></li>
-                <li class="menu1"><a class="link" href="#">Tienda</a></li>
-                <li class="menu1"><a class="link" href="#">Acerca de</a></li>
-                <li class="menu1"><a class="link" href="#">Ayuda</a></li>
-                <li class="menu1"><a class="link" href="#">Contactanos</a></li>
-                <li class="menu1"><a class="link" href="#">Suscríbete ahora</a></li>
-                <li class="menu1"><a class="link" href="graficas.php">Estadisticas</a></li>
-                <a href="#"><img src="Imagenes/login.png" alt="#">Iniciar sesion</a>
-            </ul>
-        </div>
-
-    </div>
-</header>
-
 
 <body>
      <style>
