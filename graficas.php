@@ -35,7 +35,7 @@
 </head>
 <header>
  <div class="menu">
-        <div class="logo"><img class="log1" src="Imagenes/logo2.png"></img></div>
+        <div class="logo"><img class="log1" src="images/logo2.png"></img></div>
         <div>
             <ul class="nav">
                 <li class="menu1"><a class="link" href="index.html">Inicio</a></li>

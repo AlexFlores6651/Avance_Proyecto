@@ -50,6 +50,9 @@
                         <a class="nav-link" href="productos.php" style="color:white;">Productos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="graficas.php" style="color:white;">Estadisticas</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="acerca.php" style="color:white;">Acerca de</a>
                     </li>
                     <li class="nav-item">

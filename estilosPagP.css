@@ -44,7 +44,7 @@ body{
 .container-sub{
     width: 100%;
     height: 200px;
-    background: url(Imagenes/fondoSusc.png);
+    background: url(images/fondoSusc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +84,7 @@ body{
     font-size: px;
     border-radius: 50px 50px 50px 50px;
     background: #68C3A3;
-    color #fff;
+    color:white;
     cursor: pointer;
     outline: 0px;
     
