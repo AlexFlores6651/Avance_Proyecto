@@ -48,7 +48,7 @@
             $contadorf+=1;
             echo $contadorf;
             if($contadorf==3){
-                 $message = 'Limite de intentos alcanzado la cuenta a sido bloqueada';
+                $message = 'Limite de intentos alcanzado la cuenta a sido bloqueada';
                 require './bloquear.php';
                 $con2 = $conn->prepare('UPDATE intento SET intentos=0 WHERE intento.id = 1');
                 $con2->execute();
@@ -106,11 +106,6 @@
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <style>
-        p {
-            /*font-family: 'Dancing Script', cursive;*/
-
-        }
-
     </style>
 </head>
 
