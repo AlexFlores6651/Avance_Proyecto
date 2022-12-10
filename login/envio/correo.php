@@ -1,11 +1,11 @@
 <?php
-    $admin = 'livan7241@gmail.com';
+    $admin = 'therocagames1234@gmail.com';
     $destino =  $_POST['email'];
 
-    $asunto='Respuesta a el formulario de contactanos';
+    $asunto='Cuenta Bloqueada';
     
-    $header= "<h1>"."Bienvenidos a nuestro sitio"."</h1>";
-    $mesj = 'Tu solicitud estaciondo procesada \n Esperamos tener darke una solucion rapida.';
+    $header= "Bloqueo de cuanta";
+    $mesj = 'lo sentimoos llego al limte de intentos permitidos por lo que se ha bloqueado su contraseña';
     
     mail($destino,$asunto,$mesj,$header);
     echo "<script>alert('correo enviado exitosamente')</script>";
