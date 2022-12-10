@@ -86,6 +86,7 @@
         $password = password_hash($_POST['password2'], PASSWORD_BCRYPT);
         $stmt->bindParam(':password',$password);
         if($stmt->execute()){
+            echo "<script>alert('Usuario Creado')</script>";
             $mensaje= 'Usuario Creado';
         }else{
             $mensaje= 'Error al Crear el Usuario';
