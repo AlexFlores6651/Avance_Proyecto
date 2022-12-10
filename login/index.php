@@ -39,7 +39,8 @@
                 $_SESSION['user_id'] = $results['id'];
                header("Location:./princi.php");
             }else{
-                 $message = 'Lo sentimos, la cuenta esta bloqueada';
+                echo "<script>alert('Lo sentimos, la cuenta esta bloqueada')</script>";
+                
             }
             
         }else{
@@ -48,7 +49,7 @@
             $contadorf+=1;
             echo $contadorf;
             if($contadorf==3){
-                $message = 'Limite de intentos alcanzado la cuenta a sido bloqueada';
+                echo "<script>alert('Limite de intentos alcanzado la cuenta a sido bloqueada')</script>";
                 require './bloquear.php';
                 $con2 = $conn->prepare('UPDATE intento SET intentos=0 WHERE intento.id = 1');
                 $con2->execute();
@@ -70,7 +71,7 @@
             echo "<br> Cookies Not Set";
         }
     }else{
-        $message = 'Lo sentimos, esas el capcha en incorrecto';
+        echo "<script>alert('Lo sentimos, esas el capcha en incorrecto')</script>";
     }
     if(!empty($_POST['email2']) && !empty($_POST['password2'])){
         $con1=$_POST['password2'];
@@ -141,6 +142,10 @@
                     </p>
                     <input type="checkbox" name="remember" />recordar usuario <br>
                     <input type="submit" value="logear" class="boton" name="logear" class="con">
+                    <p>
+                        Se bloquuo tu cuenta del click aqui
+                        <input type="button" value="Desbloquear" class="boton" name="Desbloquear" onclick="location.href='Recuperar.php'" class="con">
+                    </p>
                 </form>
 
                 <!--Register-->
