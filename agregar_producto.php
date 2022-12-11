@@ -127,5 +127,8 @@
             </tr>
         </table>
     </form>
+
+    <?php include_once "pie.php" ?>
+
 </body>
 </html>

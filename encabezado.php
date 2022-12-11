@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/x-icon" href="./images/favicon.png">
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -87,7 +88,7 @@
                     <div class="navbar-item">
                         <div class="buttons">
                             <a href="./login/index.php"><button type="button" class="btn btn-outline-secondary">Iniciar Sesión</button></a>
-                            <a href=" "><p style="color: #212529;"><?php echo"__";?></p></a>
+                            <a href=" "><p style="opacity: 0;"><?php echo"__";?></p></a>
                             <?php if(isset($name)){echo '<p class="title_menu">'.$name.'</p>';}?>
                         </div>
                     </div>

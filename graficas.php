@@ -7,12 +7,12 @@
     $nombreT = 'Administrador';
 
     if(!isset($_SESSION['Nombre'])){
-        include "../encabezado4.php";
+        include "./encabezado4.php";
     }else{
         if($_SESSION['Nombre'] == $nombreA && $_SESSION['Tipo'] == $nombreT){
-            include "../encabezado6.php";
+            include "./encabezado6.php";
         }else{
-            include "../encabezado5.php";
+            include "./encabezado5.php";
         }
     }
 

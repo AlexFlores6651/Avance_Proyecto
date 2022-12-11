@@ -1,5 +1,22 @@
 <?php
-  session_start();
+    session_start();
+    ob_start();
+
+    $nombreA = 'Admin';
+    $nombreT = 'Administrador';
+
+    if(!isset($_SESSION['Nombre'])){
+        include "../encabezado4.php";
+    }else{
+        if($_SESSION['Nombre'] == $nombreA && $_SESSION['Tipo'] == $nombreT){
+            include "../encabezado6.php";
+        }else{
+            include "../encabezado5.php";
+        }
+    }
+?>
+
+<?php
 
   require 'base.php';
 
@@ -85,6 +102,9 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://codepen.io/andytran/pen/vLmRVp.js'></script>
     <script src="./script_recu.js"></script>
+
+    <?php include_once "../pie.php" ?>
+
 
 </body>
 

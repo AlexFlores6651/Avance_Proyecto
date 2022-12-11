@@ -11,13 +11,6 @@
 .main{
   margin-top: 100px;
 }
-.nav {
-    
-    display: flex;
-    list-style: none;
-    margin-right: 30px;
-    flex-direction: row;
-}
 
 .menu1{   
     text-align:end;
@@ -25,15 +18,6 @@
     height: auto;
 }
 
-a{
-    font-family: "Noto Sans",sans-serif;
-    font-size: 17px;
-    margin: 18px 0 18px 14px;
-    padding: 0 14px 0 0;
-    text-decoration: none;
-    border-right: 2px #5c5c5c solid;
-    
-}
 body{
   margin: 0;
   position: relative;

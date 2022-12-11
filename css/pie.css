@@ -1,0 +1,55 @@
+.fila {
+    display: flex;
+    padding: 10px;
+    text-align: left;
+    justify-content:left;
+    background: #212529;
+    color: white
+}
+
+.columna {
+    flex: 16.66%;
+    padding: 10px;
+    text-align: left;
+    justify-content: center;
+}
+
+.contenedor_pie {
+    text-align: left;
+    position: relative;
+    width: 100%;
+    justify-content: left;
+}
+
+.texto:hover{
+    background: #808080;
+    color: #ff0080;
+}
+
+.column {
+    flex: 33%;
+    padding: 10px;
+    text-align: left;
+    justify-content: center;
+}
+
+.copy{
+    text-align: center;
+    font-size: 10px;
+}
+
+.text_contactos{
+    font-family: 'Roboto Slab', serif;
+    text-align: justify;
+}
+.title_contactos{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.link_pie{
+    text-decoration: none;
+    text-shadow: #808080;
+    color: white;
+}
+

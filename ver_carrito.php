@@ -105,6 +105,9 @@
         </div>
     </div>
     <?php } ?>
+    
+    <?php include_once "pie.php" ?>
+
 </body>
 </html>
 

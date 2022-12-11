@@ -92,6 +92,9 @@
     <script src='https://codepen.io/andytran/pen/vLmRVp.js'></script>
     <script src="./script_recu.js"></script>
 
+    <?php include_once "../pie.php" ?>
+
+
 </body>
 
 </html>
