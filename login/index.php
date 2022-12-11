@@ -162,6 +162,8 @@
     <a href="metodo.php">aa</a>
     <script src="script.js"></script>
 
+    <br><br><br><br>
+
     <?php include_once "../pie.php" ?>
 
 

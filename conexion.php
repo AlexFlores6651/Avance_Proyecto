@@ -3,6 +3,6 @@
 		return mysqli_connect('localhost',
 								'root',
 								'',
-								'graficos2');
+								'tienda');
 	}
  ?>

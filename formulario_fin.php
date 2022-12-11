@@ -45,7 +45,7 @@
 
     <h2 align="center"> Formulario Compra</h2>
 
-    <form action="ticket.php" method="POST" enctype="multipart/form-data">
+    <form action="fin.php" method="POST" enctype="multipart/form-data">
         <table align="center">
             <tr>
                 <td></td>
@@ -201,7 +201,7 @@
    </script>
 
 
-<?php include_once "pie.php" ?>
+<?php //include_once "pie.php" ?>
 
 
 </body>

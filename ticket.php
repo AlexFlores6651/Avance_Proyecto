@@ -34,46 +34,41 @@ ob_start();
                 <td colspan="3"><h3 align="center">The RockGames</h3></td>
             </tr>
             <tr>
-                <td colspan="3" ><p style="font-size: 15;" align="justify">El producto se entregara a: </p></td>
+                <td colspan="3" ><p style="font-size: 15;" align="justify">El producto se entregara a: <span style="font-size: 14;">  <?php echo $_SESSION['name'].' '.$_SESSION['pa'].' '.$_SESSION['ma']; ?> </span></p></td>
             </tr>
             <tr>
-                <td colspan="3" ><p style="font-size: 14;" align="justify"> <?php echo $_POST['nom_rec'].' '.$_POST['ap'].' '.$_POST['am']; ?> </p></td>
-            </tr>
-            <tr>
-                <td colspan="3"><h3 style="font-size: 16;" class="lol" align="left">Datos de Entrega</h3></td>
+                <td colspan="3"><h3 style="font-size: 16;" class="lol" align="center">Datos de Entrega</h3></td>
             </tr>
             <tr>
                 <td colspan="3" ><p style="font-size: 15;" align="justify">El producto se entregara en la direccion con los siguientes datos: </p></td>
             </tr>
             <tr>
-                <td colspan="3" style="padding-top: 5px"><p style="font-size: 12;" class="lol"> <?php echo 'Dirección: '.$_POST['dir'].' No. Int: '.$_POST['ni'].' No. Ext: '.$_POST['ne']; ?> </p></td>
+                <td colspan="3" style="padding-top: 5px"><p style="font-size: 12;" class="lol"> <?php echo 'Dirección: '.$_SESSION['dire'].' No. Int: '.$_SESSION['in'].' No. Ext: '.$_SESSION['en']; ?> </p></td>
             </tr>
             <tr>
-                <td colspan="3" style="padding-top: 5px"><p style="font-size: 12;" class="lol"> <?php echo $_POST['cop'].' '.$_POST['mun'].' '.$_POST['est']; ?> </p></td>
+                <td colspan="3" style="padding-top: 5px"><p style="font-size: 12;" class="lol"> <?php echo $_SESSION['cp'].' '.$_SESSION['mu'].' '.$_SESSION['es']; ?> </p></td>
             </tr>
             <tr>
                 <td colspan="3"><h3 style="font-size: 16;" class="lol" align="left">Metodo de Pago</h3></td>
             </tr>
             <tr>
                 <td colspan="3" ><p style="font-size: 14;" align="justify"> <?php 
-                    if(!empty($_POST['no_tarjeta'])){
-                            echo ' Pago por Tarjeta: '.$_POST['no_tarjeta'];
+                    if(!empty($_SESSION['nt'])){
+                            echo ' Pago por Tarjeta: '.$_SESSION['nt'];
                     }else{
-                        if(empty($_POST['transfer'])){
-                            if($_POST['transfer'] == 0){
+                            if($_SESSION['trans'] == 0){
                                 echo 'Pago por transferencia OXXO';
                             }
-                            if($_POST['transfer'] == 1){
+                            if($_SESSION['trans'] == 1){
                                 echo 'Pago por Transferencia 7Eleven';
                             }
-                            if($_POST['transfer'] == 2){
+                            if($_SESSION['trans'] == 2){
                                 echo 'Pago por Transferencia Circle K';
                             }
-                            if($_POST['transfer'] == 3){
+                            if($_SESSION['trans'] == 3){
                                 echo 'Pago por Transferencia Otros';
                             }
                         }
-                    }
                 ?></p>
                 </td>
             </tr>

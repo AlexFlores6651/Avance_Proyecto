@@ -90,7 +90,7 @@
                     </div>
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a href="../destructor.php"><button type="button" class="btn btn-outline-danger">Cerrar Sesión Administrador</button></a>
+                            <a href="../destructor.php"><button type="button" class="btn btn-outline-danger">Cerrar Sesión</button></a>
                             <a href=" "><p style="opacity: 0;"><?php echo"__";?></p></a>
                             <?php if(isset($name)){echo '<h5 class="title_menu" style="color: white"> Admin </h5>';}?>
                         </div>

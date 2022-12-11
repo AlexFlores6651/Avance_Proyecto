@@ -1,7 +1,7 @@
 <?php
     require_once "conexion.php";
     $conexion=conexion();
-    $sql="SELECT fechaVenta,montoVenta from ventas";
+    $sql="SELECT fechaVenta, montoVenta from ventas";
     $result=mysqli_query($conexion,$sql);
     $valorY=array();//MontoVentas
     $valorX=array();//fechaVentas
