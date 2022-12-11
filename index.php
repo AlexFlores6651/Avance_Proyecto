@@ -110,7 +110,11 @@
         </button>
     </div>
 
-
+    <br>
+    <br>
+    <center> <button class="button is-success" value="Suscribir"><a href="./login/sus.php" style="color:white; text-decoration:none;">Suscribirse</a> </button></center>
+    <br>
+    <br>
 
     <div class="columns">
         <div class="column">
