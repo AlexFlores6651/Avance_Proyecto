@@ -38,10 +38,11 @@
         $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
         $con2->bindParam(':password',$password);
         if($con2->execute()){
-            $mensaje= 'Contraseña actualizada y cuenta desbloqueada';
-        }else{
-            $mensaje= 'Error al Crear el Usuario';
-        }   
+            echo "<script>alert('Contraseña actualizada y cuenta desbloqueada')</script>";
+           header("Location:princi.php");
+       }else{
+            echo "<script>alert('Error no coinicde')</script>";
+       }      
     }
 ?>
 <!DOCTYPE html>
