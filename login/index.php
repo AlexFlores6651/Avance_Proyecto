@@ -44,7 +44,7 @@
             }
             
         }else{
-            $message = 'Lo sentimos, esas credenciales no coinciden';
+            echo "<script>alert('Lo sentimos, esas credenciales no coinciden')</script>";
             echo $contadorf;
             $contadorf+=1;
             echo $contadorf;
@@ -64,14 +64,12 @@
         if(!empty($_POST["remember"])){
             setcookie("email",$_POST["email"],time()+ 3600);
             setcookie("password",$_POST["password"],time()+ 3600);    
-            echo "<br> Cookies Set Successfuly";
         }else{
             setcookie("username","");
             setcookie("password","");
-            echo "<br> Cookies Not Set";
         }
     }else{
-        echo "<script>alert('Lo sentimos, esas el capcha en incorrecto')</script>";
+       // echo "<script>alert('Lo sentimos, esas el capcha en incorrecto')</script>";
     }
     if(!empty($_POST['email2']) && !empty($_POST['password2'])){
         $con1=$_POST['password2'];
@@ -87,12 +85,11 @@
         $stmt->bindParam(':password',$password);
         if($stmt->execute()){
             echo "<script>alert('Usuario Creado')</script>";
-            $mensaje= 'Usuario Creado';
         }else{
-            $mensaje= 'Error al Crear el Usuario';
+            echo "<script>alert('Error al Crear el Usuario')</script>";
         }   
         }else{
-        $mensaje= 'Error la contraseña no coincide';
+        echo "<script>alert('Error la contraseña no coincide')</script>";    
         }
     }
 ?>
@@ -143,10 +140,7 @@
                     </p>
                     <input type="checkbox" name="remember" />recordar usuario <br>
                     <input type="submit" value="logear" class="boton" name="logear" class="con">
-                    <p>
-                        Se bloquuo tu cuenta del click aqui
                         <input type="button" value="Desbloquear" class="boton" name="Desbloquear" onclick="location.href='Recuperar.php'" class="con">
-                    </p>
                 </form>
 
                 <!--Register-->
