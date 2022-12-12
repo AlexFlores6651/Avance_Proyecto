@@ -30,9 +30,7 @@
                         <div class="columna">
                             <div class="contenedor_pie">
                                 <a href="#" class="link_pie"><h3 class="title_contactos">Acerca de Nosotros</h3></a>
-                                <p class="text_contactos">En resumen, somos una pequeña empresa que busca brindar la oportunidad de 
-                                    certificación a aquel que este interesado, presentamos diferentes opciones de certificacion con tan
-                                    solo realizar un examen
+                                <p class="text_contactos">En resumen, Somos una pequeña empresa mexicana que busca comerciar productos de categoría de anime o videjuego, con precios accesibles para todo público
                                     <br>
                                     conocenos: 
                                     <section class="but">
