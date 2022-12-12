@@ -4,8 +4,8 @@
 
     $asunto='Suscripcion actual';
     
-    $header= "Te suscrubiste";
-    $mesj = 'Cupon: 123 Hola Gracias por suscribirte';
+    $header= "Te suscribiste";
+    $mesj = 'Cupon: 14238 Hola Gracias por suscribirte';
     
     mail($destino,$asunto,$mesj,$header);
     echo "<script>alert('correo enviado exitosamente')</script>";
