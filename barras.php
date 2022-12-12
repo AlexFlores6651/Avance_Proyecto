@@ -1,7 +1,7 @@
 <?php
     require_once "conexion.php";
     $conexion=conexion();
-    $sql="SELECT producto, piezasVendidas from ventas";
+    $sql="SELECT piezasVendidas, producto from ventas";
     $result=mysqli_query($conexion,$sql);
     $valorY=array();//piezasVendidas
     $valorX=array();//producto

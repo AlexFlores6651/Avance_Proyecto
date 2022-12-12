@@ -1,5 +1,5 @@
-//<?php
-    
+<?php
+
     session_start();
     ob_start();
     $idd = $_SESSION['id_mod'];

@@ -92,7 +92,7 @@
             <div class="mb-3">
                 <label for="image" class="label"> Imagen </label>
                 <img src="data:image/jpg;base64,<?php echo base64_encode($row['imagen']); ?>" alt="Imagen Producto" width="100px" align="center" />
-                <input type="file" style="width: 350px;" name="image">
+                <input type="file" style="width: 350px;" name="foto">
             </div>
             <div class="field">
                 <div class="control">
