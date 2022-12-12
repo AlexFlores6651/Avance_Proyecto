@@ -1,7 +1,7 @@
 <?php
     require_once "conexion.php";
     $conexion=conexion();
-    $sql="SELECT piezasVendidas, producto from ventas";
+    $sql="SELECT producto, piezasVendidas from ventas";
     $result=mysqli_query($conexion,$sql);
     $valorY=array();//piezasVendidas
     $valorX=array();//producto
@@ -49,10 +49,10 @@
         },
         xaxis:{
             tickangle: -45,
-            title: 'Piezas vendidas'
+            title: 'Nombre del Producto'
         },
         yaxis:{
-            title: 'Nombre del producto'
+            title: 'Piezas Vendidas'
         }
     };
 
