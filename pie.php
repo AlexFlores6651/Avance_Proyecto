@@ -35,12 +35,12 @@
                                     solo realizar un examen
                                     <br>
                                     conocenos: 
-                                      <section class="buttons">
-                                     <a href="#" class="fa fa-facebook"></a>
-                                     <a href="#" class="fa fa-twitter"></a>
-                                     <a href="#" class="fa fa-google-plus"></a>
-                                     <a href="#" class="fa fa-youtube"></a>
-                                     <a href="#" class="fa fa-linkedin"></a>
+                                    <section class="but">
+                                     <a href="#" class="fa fa-facebook" id="but"></a>
+                                     <a href="#" class="fa fa-twitter" id="but"></a>
+                                     <a href="#" class="fa fa-google-plus" id="but"></a>
+                                     <a href="#" class="fa fa-youtube" id="but"></a>
+                                     <a href="#" class="fa fa-linkedin" id="but"></a>
                                      </section>
                                 </p>
                             </div>
